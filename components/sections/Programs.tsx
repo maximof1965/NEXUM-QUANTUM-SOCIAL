@@ -97,8 +97,7 @@ export default function Programs() {
         </p>
         <a
           href="#contacto"
-          className="inline-block px-8 py-4 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
-          className="gold-gradient-bg"
+          className="inline-block px-8 py-4 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 gold-gradient-bg"
           style={{
             color: '#000000',
           }}
