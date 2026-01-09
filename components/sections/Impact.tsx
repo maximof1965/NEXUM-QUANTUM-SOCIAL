@@ -164,10 +164,11 @@ export default function Impact() {
             e.currentTarget.style.color = '#F4D03F';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'linear-gradient(45deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c)';
-            e.currentTarget.style.WebkitBackgroundClip = 'text';
-            e.currentTarget.style.WebkitTextFillColor = 'transparent';
-            e.currentTarget.style.backgroundClip = 'text';
+            const target = e.currentTarget as HTMLElement;
+            target.style.background = 'linear-gradient(45deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c)';
+            (target.style as any).WebkitBackgroundClip = 'text';
+            (target.style as any).WebkitTextFillColor = 'transparent';
+            target.style.backgroundClip = 'text';
           }}
         >
           Ver Reportes de Transparencia →
